@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21734,        531]
-NotebookOptionsPosition[     20745,        497]
-NotebookOutlinePosition[     21089,        512]
-CellTagsIndexPosition[     21046,        509]
+NotebookDataLength[     19177,        453]
+NotebookOptionsPosition[     18142,        418]
+NotebookOutlinePosition[     18486,        433]
+CellTagsIndexPosition[     18443,        430]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -255,19 +255,19 @@ Cell[BoxData[
    3.7485740133979893`*^9, 3.7485740507416744`*^9}, {3.7485741484979353`*^9, 
    3.7485741697010355`*^9}, {3.748574203966625*^9, 3.748574284205706*^9}, {
    3.7485743517551928`*^9, 3.7485743678994937`*^9}, {3.7485744419634175`*^9, 
-   3.74857444332276*^9}}],
+   3.74857444332276*^9}, {3.7485766809845266`*^9, 3.7485767351416783`*^9}, {
+   3.7485767684228754`*^9, 3.748576781738227*^9}, {3.748576818206905*^9, 
+   3.748576822691259*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`A$$ = {-1, -1}, $CellContext`B$$ = \
-{-0.2786069651741294, 1.0398009950248754`}, C$$ = {1, 0}, $CellContext`M$$ = {
-  0., 0.08955223880596996}, $CellContext`a0$$ = 
-  EuclideanDistance[$CellContext`A$$, $CellContext`M$$], $CellContext`a$$ = 
-  1.4788928565271728`, $CellContext`b0$$ = 
-  EuclideanDistance[$CellContext`B$$, $CellContext`M$$], $CellContext`b$$ = 
-  0.9902497360459711, $CellContext`c0$$ = EuclideanDistance[
-  C$$, $CellContext`M$$], $CellContext`c$$ = 
-  1.0040017945577395`, $CellContext`L$$ = 10, $CellContext`x10$$ = 
-  1, $CellContext`x1$$ = 
+ DynamicModuleBox[{$CellContext`A$$ = {-1, -1}, $CellContext`B$$ = {0, 1}, 
+  C$$ = {1, 0}, $CellContext`M$$ = {0, 0}, $CellContext`a0$$ = 
+  EuclideanDistance[$CellContext`A$$, $CellContext`M$$], $CellContext`a$$ = \
+$CellContext`a0$$, $CellContext`b0$$ = 
+  EuclideanDistance[$CellContext`B$$, $CellContext`M$$], $CellContext`b$$ = \
+$CellContext`b0$$, $CellContext`c0$$ = EuclideanDistance[
+  C$$, $CellContext`M$$], $CellContext`c$$ = $CellContext`c0$$, \
+$CellContext`L$$ = 10, $CellContext`x10$$ = 1, $CellContext`x1$$ = 
   Dynamic[$CellContext`x10$$ + $CellContext`a0$$ - $CellContext`a$$], \
 $CellContext`y10$$ = 1, $CellContext`y1$$ = 
   Dynamic[$CellContext`y10$$ + $CellContext`b0$$ - $CellContext`b$$], \
@@ -279,7 +279,7 @@ $CellContext`solution$$},
       DynamicBox[ToBoxes[
         Grid[{{"A:", $CellContext`A$$}, {"B:", $CellContext`B$$}, {
           "C:", C$$}, {}, {"M:", $CellContext`M$$}}], StandardForm],
-       ImageSizeCache->{158., {37., 43.}}], 
+       ImageSizeCache->{83., {37., 43.}}], 
       DynamicBox[ToBoxes[
         Grid[{{"a:", 
            Slider[
@@ -297,7 +297,7 @@ $CellContext`solution$$},
            
            Dynamic[$CellContext`c$$ = 
             EuclideanDistance[C$$, $CellContext`M$$]]}}], StandardForm],
-       ImageSizeCache->{281., {37., 43.}}]},
+       ImageSizeCache->{256., {36.5, 42.5}}]},
      {
       GraphicsBox[{LocatorBox[Dynamic[$CellContext`M$$]], 
         LocatorBox[Dynamic[$CellContext`A$$]], 
@@ -316,68 +316,25 @@ $CellContext`solution$$},
              C$$, $CellContext`A$$}, {$CellContext`A$$, $CellContext`M$$}, \
 {$CellContext`B$$, $CellContext`M$$}, {C$$, $CellContext`M$$}}], StandardForm,
            Graphics],
-         ImageSizeCache->{{197.7606933090101, 
-          405.2393066909899}, {-110.2393066909899, 101.2393066909899}}]},
-       ImagePadding->{{0., 0.}, {0., 0.}},
-       ImageSize->{603., Automatic},
-       PlotRange->{{-3., 3.}, {-3., 3.}},
-       PlotRangePadding->Automatic], ""}
+         ImageSizeCache->{{56.7606933090101, 
+          123.2393066909899}, {-36.23930669098989, 30.239306690989903`}}]},
+       PlotRange->3], ""}
     },
     AutoDelete->False,
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{
-  3.7485727252273836`*^9, 3.7485730613198357`*^9, {3.7485732842258787`*^9, 
-   3.74857330419458*^9}, 3.7485734523410654`*^9, {3.748573644230853*^9, 
-   3.74857365521523*^9}, {3.748573689183416*^9, 3.748573716696246*^9}, 
-   3.748573812622495*^9, {3.748573880014981*^9, 3.7485739056933208`*^9}, 
-   3.7485739815036387`*^9, {3.7485740433041935`*^9, 3.748574053272893*^9}, 
-   3.748574172919798*^9, {3.748574264611952*^9, 3.7485742857838655`*^9}, {
-   3.7485743553645487`*^9, 3.748574368290108*^9}}]
+ CellChangeTimes->{3.74857678476945*^9, 3.7485768672403584`*^9, 
+  3.7485769364924307`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{3.7485726460087357`*^9, 3.7485731011322966`*^9, 
   3.7485734777659597`*^9}],
 
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"a", "=", "1"}], ",", 
-  RowBox[{"b", "=", "1"}], ",", 
-  RowBox[{"c", "=", "1"}]}], "\[IndentingNewLine]", 
- RowBox[{"A", " ", "=", " ", 
-  RowBox[{"{", 
-   RowBox[{"0", ",", "0"}], "}"}]}], "\[IndentingNewLine]", 
- RowBox[{"B", " ", "=", 
-  RowBox[{"{", 
-   RowBox[{"1", ",", "0"}], "}"}]}], "\[IndentingNewLine]", 
- RowBox[{"C", "=", 
-  RowBox[{"{", 
-   RowBox[{"0", ",", "1"}], "}"}]}], "\[IndentingNewLine]", 
- RowBox[{"Solve", "[", "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"{", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{
-      RowBox[{"Norm", "[", 
-       RowBox[{"M", "-", "A"}], "]"}], "==", "a"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Norm", "[", 
-       RowBox[{"M", "-", "B"}], "]"}], "\[Equal]", "b"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Norm", "[", 
-       RowBox[{"M", "-", "C"}], "]"}], "\[Equal]", "c"}]}], 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"{", "M", "}"}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.747989234684558*^9, 3.747989244053239*^9}, {
-  3.747990069337082*^9, 3.7479901228532195`*^9}},
- EmphasizeSyntaxErrors->True],
-
-Cell[CellGroupData[{
+   3.747990069337082*^9, 3.7479901228532195`*^9}, 3.748576917336217*^9}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`A$$ = {-1, -1}, $CellContext`B$$ = {0, 1}, 
@@ -393,7 +350,12 @@ Cell[BoxData[
    "Grid"],
   DynamicModuleValues:>{}]], "Input",
  CellChangeTimes->{
-  3.747989154332667*^9, {3.7479892271059484`*^9, 3.7479892426494265`*^9}}],
+  3.747989154332667*^9, {3.7479892271059484`*^9, 3.7479892426494265`*^9}, {
+   3.748576926990197*^9, 3.7485769273182893`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["", "WolframAlphaShort"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -403,11 +365,14 @@ Cell[BoxData[
  GeneratedCell->False,
  CellAutoOverwrite->False,
  CellChangeTimes->{
-  3.7479891544879427`*^9, {3.7479892399958024`*^9, 3.747989241726447*^9}}]
+  3.7479891544879427`*^9, {3.7479892399958024`*^9, 3.747989241726447*^9}, {
+   3.7485769197267823`*^9, 3.748576941835608*^9}, {3.7485769808609867`*^9, 
+   3.7485769810403414`*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.747989203795524*^9, 3.7479892246522207`*^9}}],
+ CellChangeTimes->{{3.747989203795524*^9, 3.7479892246522207`*^9}, 
+   3.748576950037305*^9}],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7479872718840957`*^9, 3.7479873308978443`*^9}, {
@@ -442,57 +407,13 @@ Cell[BoxData[""], "Input",
 Cell["", "WolframAlphaLong",
  CellChangeTimes->{{3.747985184603692*^9, 3.7479852217513027`*^9}}],
 
-Cell[BoxData[{
- RowBox[{
-  RowBox[{
-  "x1", ",", "y1", ",", "x2", ",", "y2", ",", "x3", ",", "y3", ",", "l0", ",",
-    "m", ",", 
-   RowBox[{
-   "g", " ", "-", " ", 
-    "\:043a\:043e\:043d\:0441\:0442\:0430\:043d\:0442\:044b"}]}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"M", "[", "1", "]"}], "-", "x1"}], ")"}], "^", "2"}], "+", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"y4", "-", "y1"}], ")"}], "^", "2"}]}], "=", 
-  RowBox[{"a", "^", "2"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"x4", "-", "x2"}], ")"}], "^", "2"}], "+", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"y4", "-", "y2"}], ")"}], "^", "2"}]}], "=", 
-  RowBox[{"b", "^", "2"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"x4", "-", "x3"}], ")"}], "^", "2"}], "+", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"y4", "-", "y3"}], ")"}], "^", "2"}]}], "=", 
-  RowBox[{"c", "^", "2"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"a", "+", "b", "+", "c", "+", "l1", "+", "l2", "+", "l3"}], "=", 
-  "l0"}], "\[IndentingNewLine]", 
- RowBox[{"V", "=", 
-  RowBox[{
-   RowBox[{"-", "mg"}], 
-   RowBox[{"(", 
-    RowBox[{"l1", "+", "l2", "+", "l3"}], ")"}]}]}]}], "Input",
+Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7479852306654825`*^9, 3.747985240278509*^9}, {
    3.7479852755004115`*^9, 3.7479853571412354`*^9}, {3.747985406774955*^9, 
    3.7479854312656674`*^9}, {3.7479854676678305`*^9, 3.7479855250043626`*^9}, 
    3.7479855608319235`*^9, {3.7479856279833684`*^9, 3.7479856771977396`*^9}, {
    3.747985809182753*^9, 3.7479858267315865`*^9}, 3.7479859702692127`*^9, {
-   3.7479885746887455`*^9, 3.7479885783071737`*^9}},
+   3.7479885746887455`*^9, 3.7479885783071737`*^9}, 3.74857703814576*^9},
  EmphasizeSyntaxErrors->True]
 },
 WindowSize->{1858, 1037},
@@ -512,27 +433,28 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 11221, 235, 1564, "Input"],
-Cell[11804, 259, 3577, 77, 705, "Output"]
+Cell[580, 22, 11373, 237, 1564, "Input"],
+Cell[11956, 261, 2949, 66, 282, "Output"]
 }, Open  ]],
-Cell[15396, 339, 121, 2, 30, "Input"],
-Cell[15520, 343, 1235, 34, 349, "Input"],
+Cell[14920, 330, 121, 2, 30, "Input"],
+Cell[15044, 334, 166, 2, 30, "Input"],
+Cell[15213, 338, 607, 15, 46, "Input"],
 Cell[CellGroupData[{
-Cell[16780, 381, 555, 14, 46, "Input"],
-Cell[17338, 397, 327, 8, 23, "Message"]
+Cell[15845, 357, 29, 0, 34, "WolframAlphaShort"],
+Cell[15877, 359, 433, 10, 23, "Message"]
 }, Open  ]],
-Cell[17680, 408, 94, 1, 30, "Input"],
-Cell[17777, 411, 246, 3, 30, "Input"],
-Cell[18026, 416, 96, 1, 30, "Input"],
-Cell[18125, 419, 96, 1, 30, "Input"],
-Cell[18224, 422, 92, 1, 30, "Input"],
-Cell[18319, 425, 96, 1, 30, "Input"],
-Cell[18418, 428, 93, 1, 30, "Input"],
-Cell[18514, 431, 96, 1, 30, "Input"],
-Cell[18613, 434, 144, 2, 30, "Input"],
-Cell[18760, 438, 96, 1, 30, "Input"],
-Cell[18859, 441, 96, 1, 44, "WolframAlphaLong"],
-Cell[18958, 444, 1783, 51, 145, "Input"]
+Cell[16325, 372, 120, 2, 30, "Input"],
+Cell[16448, 376, 246, 3, 30, "Input"],
+Cell[16697, 381, 96, 1, 30, "Input"],
+Cell[16796, 384, 96, 1, 30, "Input"],
+Cell[16895, 387, 92, 1, 30, "Input"],
+Cell[16990, 390, 96, 1, 30, "Input"],
+Cell[17089, 393, 93, 1, 30, "Input"],
+Cell[17185, 396, 96, 1, 30, "Input"],
+Cell[17284, 399, 144, 2, 30, "Input"],
+Cell[17431, 403, 96, 1, 30, "Input"],
+Cell[17530, 406, 96, 1, 44, "WolframAlphaLong"],
+Cell[17629, 409, 509, 7, 30, "Input"]
 }
 ]
 *)

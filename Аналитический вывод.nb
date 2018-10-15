@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18082,        483]
-NotebookOptionsPosition[     16652,        439]
-NotebookOutlinePosition[     16996,        454]
-CellTagsIndexPosition[     16953,        451]
+NotebookDataLength[     17651,        471]
+NotebookOptionsPosition[     16214,        427]
+NotebookOutlinePosition[     16558,        442]
+CellTagsIndexPosition[     16515,        439]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -419,23 +419,11 @@ Cell[BoxData[
   3.748608768982247*^9, 3.7486093147354345`*^9, 3.7486095822039785`*^9, {
    3.74860974457717*^9, 3.7486097618827147`*^9}, 3.748609797926215*^9, 
    3.748609892213478*^9, 3.748609931112068*^9, {3.7486100254391813`*^9, 
-   3.7486100464680805`*^9}}],
+   3.7486100464680805`*^9}}]
+}, Open  ]],
 
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"-", "30.681483474218627`"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"x", "\[Rule]", "0.21132487111915255`"}], ",", 
-     RowBox[{"y", "\[Rule]", "0.21132487120136717`"}]}], "}"}]}], 
-  "}"}]], "Output",
- CellChangeTimes->{
-  3.748608768982247*^9, 3.7486093147354345`*^9, 3.7486095822039785`*^9, {
-   3.74860974457717*^9, 3.7486097618827147`*^9}, 3.748609797926215*^9, 
-   3.748609892213478*^9, 3.748609931112068*^9, {3.7486100254391813`*^9, 
-   3.7486100471417637`*^9}}]
-}, Open  ]]
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7486113646587777`*^9, 3.748611367740201*^9}}]
 },
 WindowSize->{1858, 1037},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
@@ -482,9 +470,9 @@ Cell[13406, 343, 499, 13, 41, "Output"],
 Cell[13908, 358, 499, 13, 41, "Output"],
 Cell[14410, 373, 296, 5, 30, "Output"],
 Cell[14709, 380, 297, 5, 30, "Output"],
-Cell[15009, 387, 1092, 34, 53, "Output"],
-Cell[16104, 423, 532, 13, 30, "Output"]
-}, Open  ]]
+Cell[15009, 387, 1092, 34, 53, "Output"]
+}, Open  ]],
+Cell[16116, 424, 94, 1, 30, InheritFromParent]
 }
 ]
 *)

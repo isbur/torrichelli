@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     23640,        559]
-NotebookOptionsPosition[     22648,        525]
-NotebookOutlinePosition[     22992,        540]
-CellTagsIndexPosition[     22949,        537]
+NotebookDataLength[     23758,        560]
+NotebookOptionsPosition[     22776,        526]
+NotebookOutlinePosition[     23120,        541]
+CellTagsIndexPosition[     23077,        538]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -368,7 +368,7 @@ $CellContext`solution$$},
            
            Dynamic[$CellContext`c$$ = 
             EuclideanDistance[C$$, $CellContext`M$$]]}}], StandardForm],
-       ImageSizeCache->{256., {36.5, 42.5}}]},
+       ImageSizeCache->{256., {37., 43.}}]},
      {
       GraphicsBox[{LocatorBox[Dynamic[$CellContext`M$$]], 
         LocatorBox[Dynamic[$CellContext`A$$]], 
@@ -439,19 +439,20 @@ Cell[BoxData[
    "Grid"],
   DynamicModuleValues:>{}]], "Input",
  CellChangeTimes->{
-  3.747989154332667*^9, {3.7479892271059484`*^9, 
-   3.7479892426494265`*^9}},ExpressionUUID->"2c58b24c-4c68-47bd-9c98-\
-46f9374777d9"],
+  3.747989154332667*^9, {3.7479892271059484`*^9, 3.7479892426494265`*^9}, 
+   3.7486111536584735`*^9},
+ ExpressionUUID -> "2c58b24c-4c68-47bd-9c98-46f9374777d9"],
 
 Cell[BoxData[
  TemplateBox[{
-  "Solve","ivar","\:f3b5\!\({0, 0}\) is not a valid variable.\:f3b5",2,50,624,
-   18769087792612819934,"Local"},
+  "Solve","ivar","\:f3b5\"\!\({0, 0}\) is not a valid variable.\"\:f3b5",2,50,
+   624,18769087792612819934,"Local"},
   "MessageTemplate"]], "Message", "MSG",
  GeneratedCell->False,
  CellAutoOverwrite->False,
  CellChangeTimes->{
-  3.7479891544879427`*^9, {3.7479892399958024`*^9, 3.747989241726447*^9}},
+  3.7479891544879427`*^9, {3.7479892399958024`*^9, 3.747989241726447*^9}, {
+   3.748611143658601*^9, 3.7486111532627325`*^9}},
  ExpressionUUID -> "c8ed2ecd-0b02-490a-9a6c-b60a8f57879a"]
 }, Open  ]],
 
@@ -508,10 +509,10 @@ Cell[BoxData[""], "Input",
   3.7479873434770913`*^9}},ExpressionUUID->"99d861d6-9012-4031-af69-\
 9db36eb83e1c"],
 
-Cell["", "WolframAlphaLong",
- CellChangeTimes->{{3.747985184603692*^9, 
-  3.7479852217513027`*^9}},ExpressionUUID->"5c255ebf-5f3f-48b3-a724-\
-71bda92a3aeb"],
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.747985184603692*^9, 3.7479852217513027`*^9}, {
+  3.7486111467469473`*^9, 3.748611146756642*^9}},
+ ExpressionUUID -> "5c255ebf-5f3f-48b3-a724-71bda92a3aeb"],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7479852306654825`*^9, 3.747985240278509*^9}, {
@@ -541,26 +542,26 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 14332, 308, 1810, "Input"],
-Cell[14915, 332, 3695, 78, 299, "Output"]
+Cell[14915, 332, 3693, 78, 299, "Output"]
 }, Open  ]],
-Cell[18625, 413, 178, 3, 30, "Input"],
-Cell[18806, 418, 283, 5, 30, "Input"],
+Cell[18623, 413, 178, 3, 30, "Input"],
+Cell[18804, 418, 283, 5, 30, "Input"],
 Cell[CellGroupData[{
-Cell[19114, 427, 616, 16, 46, "Input"],
-Cell[19733, 445, 386, 9, 23, "Message"]
+Cell[19112, 427, 642, 16, 46, "Input"],
+Cell[19757, 445, 442, 10, 23, "Message"]
 }, Open  ]],
-Cell[20134, 457, 154, 3, 30, "Input"],
-Cell[20291, 462, 306, 5, 30, "Input"],
-Cell[20600, 469, 156, 3, 30, "Input"],
-Cell[20759, 474, 156, 3, 30, "Input"],
-Cell[20918, 479, 152, 3, 30, "Input"],
-Cell[21073, 484, 156, 3, 30, "Input"],
-Cell[21232, 489, 153, 3, 30, "Input"],
-Cell[21388, 494, 156, 3, 30, "Input"],
-Cell[21547, 499, 205, 4, 30, "Input"],
-Cell[21755, 505, 156, 3, 30, "Input"],
-Cell[21914, 510, 156, 3, 44, "WolframAlphaLong"],
-Cell[22073, 515, 571, 8, 30, "Input"]
+Cell[20214, 458, 154, 3, 30, "Input"],
+Cell[20371, 463, 306, 5, 30, "Input"],
+Cell[20680, 470, 156, 3, 30, "Input"],
+Cell[20839, 475, 156, 3, 30, "Input"],
+Cell[20998, 480, 152, 3, 30, "Input"],
+Cell[21153, 485, 156, 3, 30, "Input"],
+Cell[21312, 490, 153, 3, 30, "Input"],
+Cell[21468, 495, 156, 3, 30, "Input"],
+Cell[21627, 500, 205, 4, 30, "Input"],
+Cell[21835, 506, 156, 3, 30, "Input"],
+Cell[21994, 511, 204, 3, 30, "Input"],
+Cell[22201, 516, 571, 8, 30, "Input"]
 }
 ]
 *)

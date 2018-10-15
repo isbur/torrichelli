@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     20155,        511]
-NotebookOptionsPosition[     19154,        477]
-NotebookOutlinePosition[     19498,        492]
-CellTagsIndexPosition[     19455,        489]
+NotebookDataLength[     21734,        531]
+NotebookOptionsPosition[     20745,        497]
+NotebookOutlinePosition[     21089,        512]
+CellTagsIndexPosition[     21046,        509]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,7 +24,7 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"DynamicModule", "[", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"{", 
+    RowBox[{"{", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"A", "=", 
        RowBox[{"{", 
@@ -39,11 +39,33 @@ Cell[BoxData[
         RowBox[{"1", ",", "0"}], "}"}]}], ",", " ", 
       RowBox[{"M", "=", 
        RowBox[{"{", 
-        RowBox[{"0", ",", "0"}], "}"}]}], ",", " ", 
-      RowBox[{"a", "=", "1"}], ",", 
-      RowBox[{"b", "=", "1"}], ",", 
-      RowBox[{"c", "=", "1"}], ",", " ", "solution"}], "}"}], ",", 
-    "\[IndentingNewLine]", 
+        RowBox[{"0", ",", "0"}], "}"}]}], ",", " ", "\[IndentingNewLine]", 
+      RowBox[{"a0", "=", 
+       RowBox[{"EuclideanDistance", "[", 
+        RowBox[{"A", ",", "M"}], "]"}]}], ",", 
+      RowBox[{"a", "=", "a0"}], ",", 
+      RowBox[{"b0", "=", 
+       RowBox[{"EuclideanDistance", "[", 
+        RowBox[{"B", ",", "M"}], "]"}]}], ",", 
+      RowBox[{"b", "=", "b0"}], ",", 
+      RowBox[{"c0", "=", 
+       RowBox[{"EuclideanDistance", "[", 
+        RowBox[{"C", ",", "M"}], "]"}]}], ",", 
+      RowBox[{"c", "=", "c0"}], ",", " ", "\[IndentingNewLine]", 
+      RowBox[{"L", " ", "=", " ", "10"}], ",", " ", 
+      RowBox[{"x10", "=", "1"}], ",", 
+      RowBox[{"x1", "=", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"x10", "+", "a0", "-", "a"}], "]"}]}], ",", " ", 
+      RowBox[{"y10", "=", "1"}], ",", 
+      RowBox[{"y1", "=", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"y10", "+", "b0", "-", "b"}], "]"}]}], ",", 
+      RowBox[{"z10", "=", "1"}], ",", 
+      RowBox[{"z1", "=", 
+       RowBox[{"Dynamic", "[", 
+        RowBox[{"z10", "+", "c0", "-", "c"}], "]"}]}], ",", " ", 
+      "\[IndentingNewLine]", "solution"}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"Grid", "[", 
      RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{"(*", 
@@ -122,88 +144,80 @@ Cell[BoxData[
             RowBox[{"Locator", "[", 
              RowBox[{"Dynamic", "[", "A", "]"}], "]"}], ",", 
             "\[IndentingNewLine]", 
-            RowBox[{"Circle", "[", 
+            RowBox[{"(*", 
              RowBox[{
-              RowBox[{"Dynamic", "[", "A", "]"}], ",", 
-              RowBox[{"Dynamic", "[", "a", "]"}]}], "]"}], ",", 
+              RowBox[{"Circle", "[", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "A", "]"}], ",", 
+                RowBox[{"Dynamic", "[", "a", "]"}]}], "]"}], ","}], "*)"}], 
             "\[IndentingNewLine]", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "A", "]"}], ",", 
+               RowBox[{"Dynamic", "[", 
+                RowBox[{"A", "-", 
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "x1"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+            ",", "\[IndentingNewLine]", 
             RowBox[{"Locator", "[", 
              RowBox[{"Dynamic", "[", "B", "]"}], "]"}], ",", 
             "\[IndentingNewLine]", 
-            RowBox[{"Circle", "[", 
+            RowBox[{"(*", 
              RowBox[{
-              RowBox[{"Dynamic", "[", "B", "]"}], ",", 
-              RowBox[{"Dynamic", "[", "b", "]"}]}], "]"}], ",", 
+              RowBox[{"Circle", "[", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "B", "]"}], ",", 
+                RowBox[{"Dynamic", "[", "b", "]"}]}], "]"}], ","}], "*)"}], 
             "\[IndentingNewLine]", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "B", "]"}], ",", 
+               RowBox[{"Dynamic", "[", 
+                RowBox[{"B", "-", 
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "y1"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+            ",", "\[IndentingNewLine]", 
             RowBox[{"Locator", "[", 
              RowBox[{"Dynamic", "[", "C", "]"}], "]"}], ",", 
             "\[IndentingNewLine]", 
-            RowBox[{"Circle", "[", 
+            RowBox[{"(*", 
              RowBox[{
-              RowBox[{"Dynamic", "[", "C", "]"}], ",", 
-              RowBox[{"Dynamic", "[", "c", "]"}]}], "]"}]}], 
-           "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}], ",", 
-          "\[IndentingNewLine]", 
+              RowBox[{"Circle", "[", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", "C", "]"}], ",", 
+                RowBox[{"Dynamic", "[", "c", "]"}]}], "]"}], ","}], "*)"}], 
+            "\[IndentingNewLine]", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "C", "]"}], ",", 
+               RowBox[{"Dynamic", "[", 
+                RowBox[{"C", "-", 
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "z1"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+            ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+            RowBox[{"Dynamic", "[", 
+             RowBox[{"Line", "[", 
+              RowBox[{"{", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{"A", ",", "B", ",", "C", ",", "A"}], "}"}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"{", 
+                 RowBox[{"A", ",", "M"}], "}"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"{", 
+                 RowBox[{"B", ",", "M"}], "}"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"{", 
+                 RowBox[{"C", ",", "M"}], "}"}]}], "\[IndentingNewLine]", 
+               "}"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+           "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
           RowBox[{"PlotRange", "\[Rule]", "3"}]}], "\[IndentingNewLine]", 
-         "]"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
-        RowBox[{"(*", 
-         RowBox[{
-          RowBox[{"Solve", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"{", "\[IndentingNewLine]", 
-             RowBox[{
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"M", "[", "1", "]"}], "-", 
-                   RowBox[{"A", "[", "1", "]"}]}], ")"}], "^", "2"}], "+", 
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"M", "[", "2", "]"}], "-", 
-                   RowBox[{"A", "[", "2", "]"}]}], ")"}], "^", "2"}]}], 
-               "\[Equal]", 
-               RowBox[{"a", "^", "2"}]}], ",", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"M", "[", "1", "]"}], "-", 
-                   RowBox[{"B", "[", "1", "]"}]}], ")"}], "^", "2"}], "+", 
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"M", "[", "2", "]"}], "-", 
-                   RowBox[{"B", "[", "2", "]"}]}], ")"}], "^", "2"}]}], 
-               "\[Equal]", 
-               RowBox[{"b", "^", "2"}]}], ",", "\[IndentingNewLine]", 
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"M", "[", "1", "]"}], "-", 
-                   RowBox[{"C", "[", "1", "]"}]}], ")"}], "^", "2"}], "+", 
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"M", "[", "2", "]"}], "-", 
-                   RowBox[{"C", "[", "2", "]"}]}], ")"}], "^", "2"}]}], 
-               "\[Equal]", 
-               RowBox[{"c", "^", "2"}]}]}], "\[IndentingNewLine]", "}"}], ",",
-             "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"M", "[", "1", "]"}], ",", 
-              RowBox[{"M", "[", "2", "]"}]}], "}"}]}], "\[IndentingNewLine]", 
-           "]"}], ",", "\[IndentingNewLine]", 
-          RowBox[{"M", "/.", "solution"}]}], "*)"}], "\[IndentingNewLine]", 
-        "\[IndentingNewLine]", "}"}]}], "\[IndentingNewLine]", "}"}], "]"}]}],
-    "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}], 
-  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+         "]"}], "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}]}], 
+      "\[IndentingNewLine]", "}"}], "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{
   3.747985978639819*^9, {3.747986020788064*^9, 3.7479860479033365`*^9}, {
    3.747986110395792*^9, 3.747986278320964*^9}, {3.747986412717063*^9, 
@@ -232,20 +246,40 @@ Cell[BoxData[
    3.7485724593057957`*^9}, {3.7485724951651316`*^9, 3.74857251016512*^9}, {
    3.7485725579306993`*^9, 3.7485725802899857`*^9}, {3.7485726251336927`*^9, 
    3.748572638461834*^9}, {3.7485727183680053`*^9, 3.748572724508629*^9}, {
-   3.7485727601648664`*^9, 3.748572782633539*^9}}],
+   3.7485727601648664`*^9, 3.748572782633539*^9}, {3.74857319408143*^9, 
+   3.748573268973378*^9}, {3.748573301225899*^9, 3.7485734399817038`*^9}, {
+   3.7485735417209377`*^9, 3.748573566814665*^9}, {3.748573600300815*^9, 
+   3.748573729383797*^9}, {3.7485737633568745`*^9, 3.7485737634506254`*^9}, {
+   3.748573795356841*^9, 3.7485738070599413`*^9}, {3.7485738372338085`*^9, 
+   3.7485739046933193`*^9}, {3.7485739472693586`*^9, 3.748573979800581*^9}, {
+   3.7485740133979893`*^9, 3.7485740507416744`*^9}, {3.7485741484979353`*^9, 
+   3.7485741697010355`*^9}, {3.748574203966625*^9, 3.748574284205706*^9}, {
+   3.7485743517551928`*^9, 3.7485743678994937`*^9}, {3.7485744419634175`*^9, 
+   3.74857444332276*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`A$$ = {-0.9000000000000004, \
--0.4999999999999929}, $CellContext`B$$ = {0, 1}, C$$ = {1, 
-  0}, $CellContext`M$$ = {0, 0}, $CellContext`a$$ = 
-  1.0295630140986969`, $CellContext`b$$ = 1, $CellContext`c$$ = 
-  1, $CellContext`solution$$}, 
+ DynamicModuleBox[{$CellContext`A$$ = {-1, -1}, $CellContext`B$$ = \
+{-0.2786069651741294, 1.0398009950248754`}, C$$ = {1, 0}, $CellContext`M$$ = {
+  0., 0.08955223880596996}, $CellContext`a0$$ = 
+  EuclideanDistance[$CellContext`A$$, $CellContext`M$$], $CellContext`a$$ = 
+  1.4788928565271728`, $CellContext`b0$$ = 
+  EuclideanDistance[$CellContext`B$$, $CellContext`M$$], $CellContext`b$$ = 
+  0.9902497360459711, $CellContext`c0$$ = EuclideanDistance[
+  C$$, $CellContext`M$$], $CellContext`c$$ = 
+  1.0040017945577395`, $CellContext`L$$ = 10, $CellContext`x10$$ = 
+  1, $CellContext`x1$$ = 
+  Dynamic[$CellContext`x10$$ + $CellContext`a0$$ - $CellContext`a$$], \
+$CellContext`y10$$ = 1, $CellContext`y1$$ = 
+  Dynamic[$CellContext`y10$$ + $CellContext`b0$$ - $CellContext`b$$], \
+$CellContext`z10$$ = 1, $CellContext`z1$$ = 
+  Dynamic[$CellContext`z10$$ + $CellContext`c0$$ - $CellContext`c$$], \
+$CellContext`solution$$}, 
   TagBox[GridBox[{
      {
       DynamicBox[ToBoxes[
         Grid[{{"A:", $CellContext`A$$}, {"B:", $CellContext`B$$}, {
           "C:", C$$}, {}, {"M:", $CellContext`M$$}}], StandardForm],
-       ImageSizeCache->{111., {37., 43.}}], 
+       ImageSizeCache->{158., {37., 43.}}], 
       DynamicBox[ToBoxes[
         Grid[{{"a:", 
            Slider[
@@ -255,19 +289,37 @@ Cell[BoxData[
             EuclideanDistance[$CellContext`A$$, $CellContext`M$$]]}, {"b:", 
            Slider[
             Dynamic[$CellContext`b$$]], 
-           Dynamic[$CellContext`b$$]}, {"c:", 
+           
+           Dynamic[$CellContext`b$$ = 
+            EuclideanDistance[$CellContext`B$$, $CellContext`M$$]]}, {"c:", 
            Slider[
             Dynamic[$CellContext`c$$]], 
-           Dynamic[$CellContext`c$$]}}], StandardForm],
+           
+           Dynamic[$CellContext`c$$ = 
+            EuclideanDistance[C$$, $CellContext`M$$]]}}], StandardForm],
        ImageSizeCache->{281., {37., 43.}}]},
      {
       GraphicsBox[{LocatorBox[Dynamic[$CellContext`M$$]], 
         LocatorBox[Dynamic[$CellContext`A$$]], 
-        CircleBox[Dynamic[$CellContext`A$$], Dynamic[$CellContext`a$$]], 
+        LineBox[{
+         Dynamic[$CellContext`A$$], 
+          Dynamic[$CellContext`A$$ - {0, $CellContext`x1$$}]}], 
         LocatorBox[Dynamic[$CellContext`B$$]], 
-        CircleBox[Dynamic[$CellContext`B$$]], LocatorBox[Dynamic[C$$]], 
-        CircleBox[Dynamic[C$$]]},
+        LineBox[{
+         Dynamic[$CellContext`B$$], 
+          Dynamic[$CellContext`B$$ - {0, $CellContext`y1$$}]}], 
+        LocatorBox[Dynamic[C$$]], 
+        LineBox[{Dynamic[C$$], Dynamic[C$$ - {0, $CellContext`z1$$}]}], 
+        DynamicBox[Typeset`ToBoxes[
+          
+          Line[{{$CellContext`A$$, $CellContext`B$$, 
+             C$$, $CellContext`A$$}, {$CellContext`A$$, $CellContext`M$$}, \
+{$CellContext`B$$, $CellContext`M$$}, {C$$, $CellContext`M$$}}], StandardForm,
+           Graphics],
+         ImageSizeCache->{{197.7606933090101, 
+          405.2393066909899}, {-110.2393066909899, 101.2393066909899}}]},
        ImagePadding->{{0., 0.}, {0., 0.}},
+       ImageSize->{603., Automatic},
        PlotRange->{{-3., 3.}, {-3., 3.}},
        PlotRangePadding->Automatic], ""}
     },
@@ -275,51 +327,19 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.7485727252273836`*^9}]
+ CellChangeTimes->{
+  3.7485727252273836`*^9, 3.7485730613198357`*^9, {3.7485732842258787`*^9, 
+   3.74857330419458*^9}, 3.7485734523410654`*^9, {3.748573644230853*^9, 
+   3.74857365521523*^9}, {3.748573689183416*^9, 3.748573716696246*^9}, 
+   3.748573812622495*^9, {3.748573880014981*^9, 3.7485739056933208`*^9}, 
+   3.7485739815036387`*^9, {3.7485740433041935`*^9, 3.748574053272893*^9}, 
+   3.748574172919798*^9, {3.748574264611952*^9, 3.7485742857838655`*^9}, {
+   3.7485743553645487`*^9, 3.748574368290108*^9}}]
 }, Open  ]],
 
-Cell[BoxData[
- DynamicModuleBox[{$CellContext`A$$ = {-1, -1}, $CellContext`B$$ = {
-  0.833333333333333, 0.40000000000000213`}, C$$ = {-1.233333333333336, 
-  1.2000000000000028`}, $CellContext`M$$ = {0, 0}, $CellContext`a$$ = 
-  1, $CellContext`b$$ = 1, $CellContext`c$$ = 1, $CellContext`solution$$}, 
-  TagBox[GridBox[{
-     {
-      DynamicBox[ToBoxes[
-        Grid[{{"A:", $CellContext`A$$}, {"B:", $CellContext`B$$}, {
-          "C:", C$$}, {}, {"M:", $CellContext`M$$}}], StandardForm],
-       ImageSizeCache->{333., {37., 43.}}], 
-      DynamicBox[ToBoxes[
-        Grid[{{"a:", 
-           Slider[
-            Dynamic[$CellContext`a$$]], 
-           Dynamic[$CellContext`a$$]}, {"b:", 
-           Slider[
-            Dynamic[$CellContext`b$$]], 
-           Dynamic[$CellContext`b$$]}, {"c:", 
-           Slider[
-            Dynamic[$CellContext`c$$]], 
-           Dynamic[$CellContext`c$$]}}], StandardForm],
-       ImageSizeCache->{253., {37., 43.}}]},
-     {
-      GraphicsBox[{LocatorBox[Dynamic[$CellContext`M$$]], 
-        LocatorBox[Dynamic[$CellContext`A$$]], 
-        CircleBox[Dynamic[$CellContext`A$$], Dynamic[
-         EuclideanDistance[$CellContext`A$$, $CellContext`M$$]]], 
-        LocatorBox[Dynamic[$CellContext`B$$]], 
-        CircleBox[Dynamic[$CellContext`B$$], Dynamic[
-         EuclideanDistance[$CellContext`B$$, $CellContext`M$$]]], 
-        LocatorBox[Dynamic[C$$]], 
-        CircleBox[Dynamic[C$$], {0.9999999999999982, 1.}]},
-       ImagePadding->{{0., 0.}, {0., 0.}},
-       PlotRange->{{-3., 3.}, {-3., 3.}},
-       PlotRangePadding->Automatic], ""}
-    },
-    AutoDelete->False,
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Grid"],
-  DynamicModuleValues:>{}]], "Input",
- CellChangeTimes->{3.7485726460087357`*^9}],
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.7485726460087357`*^9, 3.7485731011322966`*^9, 
+  3.7485734777659597`*^9}],
 
 Cell[BoxData[{
  RowBox[{
@@ -492,27 +512,27 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 9850, 212, 1398, "Input"],
-Cell[10433, 236, 1694, 41, 282, "Output"]
+Cell[580, 22, 11221, 235, 1564, "Input"],
+Cell[11804, 259, 3577, 77, 705, "Output"]
 }, Open  ]],
-Cell[12142, 280, 1784, 41, 282, InheritFromParent],
-Cell[13929, 323, 1235, 34, 349, "Input"],
+Cell[15396, 339, 121, 2, 30, "Input"],
+Cell[15520, 343, 1235, 34, 349, "Input"],
 Cell[CellGroupData[{
-Cell[15189, 361, 555, 14, 46, "Input"],
-Cell[15747, 377, 327, 8, 23, "Message"]
+Cell[16780, 381, 555, 14, 46, "Input"],
+Cell[17338, 397, 327, 8, 23, "Message"]
 }, Open  ]],
-Cell[16089, 388, 94, 1, 30, "Input"],
-Cell[16186, 391, 246, 3, 30, "Input"],
-Cell[16435, 396, 96, 1, 30, "Input"],
-Cell[16534, 399, 96, 1, 30, "Input"],
-Cell[16633, 402, 92, 1, 30, "Input"],
-Cell[16728, 405, 96, 1, 30, "Input"],
-Cell[16827, 408, 93, 1, 30, "Input"],
-Cell[16923, 411, 96, 1, 30, "Input"],
-Cell[17022, 414, 144, 2, 30, "Input"],
-Cell[17169, 418, 96, 1, 30, "Input"],
-Cell[17268, 421, 96, 1, 44, "WolframAlphaLong"],
-Cell[17367, 424, 1783, 51, 145, "Input"]
+Cell[17680, 408, 94, 1, 30, "Input"],
+Cell[17777, 411, 246, 3, 30, "Input"],
+Cell[18026, 416, 96, 1, 30, "Input"],
+Cell[18125, 419, 96, 1, 30, "Input"],
+Cell[18224, 422, 92, 1, 30, "Input"],
+Cell[18319, 425, 96, 1, 30, "Input"],
+Cell[18418, 428, 93, 1, 30, "Input"],
+Cell[18514, 431, 96, 1, 30, "Input"],
+Cell[18613, 434, 144, 2, 30, "Input"],
+Cell[18760, 438, 96, 1, 30, "Input"],
+Cell[18859, 441, 96, 1, 44, "WolframAlphaLong"],
+Cell[18958, 444, 1783, 51, 145, "Input"]
 }
 ]
 *)
